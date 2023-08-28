@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: powderblue;
+        }
+        h1 {
+            color: blue;
+        }
+        p {
+            color: green;
+        }
+        
+        input[checked] {
+            height: 100px;
+            width: 100px;
+        }
+
+        input[name="text1"]{
+            background-color: grey;
+            border-radius: 10px;
+        }
+
+        input[random_atributo^="obl_"]{
+            background-color: lightgray;
+            border-radius: 10px;
+            border-color: red;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba CSS</title>
+</head>
+<body>
+    <h1>Soy un titulo con estilo</h1>
+    <p>Esto es un parrafo</p>
+    <p style="color: black; background-color: darkcyan; text-align: center;">Esto es otro parrafo</p>
+
+    <input type="checkbox" name="chk" checked> CHECKO PEREZ
+    <br>
+    Input de Prueba
+    <input type="text" name1="text1">
+    <br>
+    Campo Obligatorio 1
+    <input type="text" random_atributo="obl_1"> <br>
+    Campo Obligatorio 2
+    <input type="text" random_atributo="obl_2"> <br>
+
+</body>
+</html>

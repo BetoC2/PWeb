@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 2</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Tabla chida</h1>
+    <table border=1 class="tablosa">
+        <tr>
+            <th colspan="5">Encabezado no tan chido</th>
+        </tr>
+        <tr>
+            <td>celda (1,1)</td>
+            <td>celda (1,2)</td>
+            <td>celda (1,3)</td>
+            <td>celda (1,4)</td>
+            <td>celda (1,5)</td>
+        </tr>
+        <tr>
+            <td>celda (2,1)</td>
+            <td>celda (2,2)</td>
+            <td>celda (2,3)</td>
+            <td>celda (2,4)</td>
+            <td>celda (2,5)</td>
+        </tr>
+        <tr>
+            <td>celda (3,1)</td>
+            <td>celda (3,2)</td>
+            <td>celda (3,3)</td>
+            <td>celda (3,4)</td>
+            <td>celda (3,5)</td>
+        </tr>
+        <tr>
+            <td>celda (4,1)</td>
+            <td>celda (4,2)</td>
+            <td>celda (4,3)</td>
+            <td>celda (4,4)</td>
+            <td>celda (4,5)</td>
+        </tr>
+        <tr>
+            <td>celda (5,1)</td>
+            <td>celda (5,2)</td>
+            <td>celda (5,3)</td>
+            <td>celda (5,4)</td>
+            <td>celda (5,5)</td>
+        </tr>
+    </table>
+    <h2>Formulario de chilaquiles (Importante)</h2>
+    <form>
+        <!-- Los campos de texto con esquinas redondeadas -->
+        <label for="nombre">¿Cuál es tu nombre?</label>
+        <input type="text" name="nombre" class="redondo"> <br>
+        <label for="direccion">¿Cuál es tu número de teléfono?</label>
+        <input type="text" name="direccion" class="redondo"> <br>
+
+        <!-- Botones con links que llevan a otra pestaña -->
+        <p id="disclaimer">La información proporcionada será utilizada para enviar ofertas de chilaquiles</p>
+        <a href="https://loschilaquiles.com/" target="_blank">
+            <input type="button" value="¿Chilaquiles?" class="boton">
+        </a> <br>
+        <a href="https://www.youtube.com/watch?v=o-I3geE4Mwk" target="_blank">
+            <input type="button" value="Renace" class="boton">
+        </a> <br>
+
+        <!-- Checkboxes con estilos diferentes -->
+        Chilaquiles Favoritos: <br>
+        <input type="checkbox" name="chil_fav" value="rojos">
+        <label for="chil_fav">Rojos</label>
+        <input type="checkbox" name="chil_fav" value="verdes">
+        <label for="chil_fav">Verdes</label>
+        <input type="checkbox" name="chil_fav" value="otros">
+        <label for="chil_fav">Otros</label>
+
+
+
+    </form>
+</body>
+
+</html>

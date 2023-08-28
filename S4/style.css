@@ -1,0 +1,59 @@
+h1 {
+    text-align: center;
+    color: orange;
+    text-decoration: line-through;
+}
+
+ul {
+    list-style: none;
+}
+
+input[obligatorio] {
+    border-color: red;
+}
+
+form {
+    color: blue;
+}
+
+button {
+    padding: 20px;
+}
+
+#first {
+    letter-spacing: 8px;
+}
+
+.par {
+    background-color: rgb(255, 175, 218);
+    color: rgb(166, 83, 244);
+}
+
+.italica {
+    font-style: italic;
+}
+
+.centrada {
+    text-align: center;
+}
+
+.big_text {
+    font-size: xx-large;
+}
+
+.sombreado {
+    text-shadow: 1px 1px 2px black;
+}
+
+.redondo {
+    border-radius: 10px;
+}
+
+.remarcado {
+    border-color: blue;
+    padding: 40px;
+}
+
+#uwu:checked {
+    box-shadow: 0 0 0 3px red;
+}
