@@ -12,6 +12,7 @@ td {
 
 th {
     padding: 20px;
+    font-size: x-large;
 }
 
 .tablosa {
@@ -63,4 +64,28 @@ th:hover {
 .boton:hover {
     background-color: #f9ded3;
     color: white;
+}
+
+.check {
+    cursor: pointer;
+    background-color: #fab4b6;
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: 2px solid #fab4b6;
+}
+
+.check:checked {
+    background-color: lightgreen;
+}
+
+#enviar_spam {
+    background-color: #89abb4;
+    border-color: #6e7b8c;
+    border-radius: 5px;
+}
+
+#enviar_spam:invalid {
+    background-color: #fab4b6;
+    border-color: #f9ded3;
 }
