@@ -1,0 +1,17 @@
+* {
+    border: 3px dashed red;
+}
+p {
+    border: 3px dotted blue;
+}
+#dos {
+    display: inline;
+}
+#tres {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+}
+#h:hover ~ p {
+    display: none;
+}
