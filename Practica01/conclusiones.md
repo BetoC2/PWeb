@@ -1,0 +1,5 @@
+## Conclusiones
+
+Definitivamente fue una práctica llena de aprendizajes, puesto que tuve que enlazar todos los temas vistos en clase para desarrollar una página web mínimamente decente y que sea utilizable, pero hacerla me dio una mejor idea de cómo funciona el desarrollo web y la importancia de tener una estructura planeada de la cual guiarte al hacer la página web. 
+
+Lo que me llevo de esta práctica es el cómo utilizar Bootstrap para generar elementos de forma rápida para una página web, me costó mucho trabajo realizar el carrito de compras, porque mi idea fue utilizar un grid para que la parte con el carrito baje al final de la página al hacer más pequeña la  página, pero por algún motivo no lograba hacerlo, pero después de un rato peleándome con las clases y los contenedores logré resolverlo.

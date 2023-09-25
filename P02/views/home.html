@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Categoría A</title>
+    <title>BetoShop</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,6 +13,15 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/e53bd6b73c.js" crossorigin="anonymous"></script>
+    <script src="../controllers/data_handler.js"></script>
+    <script src="../controllers/index.js"></script>
+    <script src="../controllers/products.js"></script>
+    <script src="../controllers/shopping_cart.js"></script>
+    <script src="../controllers/utils.js"></script>
+
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./style.css">
 
     <!-- Modal de login -->
     <div class="modal fade" id="modal_login" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
@@ -162,6 +171,36 @@
 
     </header>
     <main>
+        <!-- Carrusel con las fotos de banner UwU -->
+        <div id="carouselId" class="carousel slide posi" data-bs-ride="carousel"
+            style="width: 100%; margin: 0 auto; padding-bottom: 20px;">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="First slide"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="./img/banner01.jpg" class="w-100 d-block" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner02.png" class="w-100 d-block" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner03.png" class="w-100 d-block" alt="Third slide">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Contenedor con las tarjetas de los productos -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -188,6 +227,33 @@
                         <div class="card-body">
                             <h4 class="card-title">Trufas</h4>
                             <p class="card-text">Muy autodescriptivo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card w-100 h-100">
+                        <img class="card-img-top img_product" src="./img/chocolate4.jpg" alt="Brownie cubierto">
+                        <div class="card-body">
+                            <h4 class="card-title">Brownie cubierto</h4>
+                            <p class="card-text">Un rico brownie con una cubierta de chocolate</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card w-100 h-100 w-5000 h-100">
+                        <img class="card-img-top img_product" src="./img/chocolate5.jpg" alt="Barra de chocolate">
+                        <div class="card-body">
+                            <h4 class="card-title">Galletas</h4>
+                            <p class="card-text">Galletas con chispas de chocolate :)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <img class="card-img-top img_product" src="./img/chocolate6.jpg" alt="Surtido de chocolates">
+                        <div class="card-body">
+                            <h4 class="card-title">Chocolates ricos</h4>
+                            <p class="card-text">la especialidad de la casa</p>
                         </div>
                     </div>
                 </div>

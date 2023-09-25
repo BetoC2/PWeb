@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Categoría A</title>
+    <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,6 +13,9 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/e53bd6b73c.js" crossorigin="anonymous"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./style.css">
 
     <!-- Modal de login -->
     <div class="modal fade" id="modal_login" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
@@ -162,73 +165,120 @@
 
     </header>
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card w-100 h-100 w-5000 h-100">
-                        <img class="card-img-top img_product" src="./img/chocolate1.jpg" alt="Barra de chocolate">
-                        <div class="card-body">
-                            <h4 class="card-title">Barra de chocolate</h4>
-                            <p class="card-text">Una rica barra de chocolate</p>
+        <!-- Mis pedidos -->
+        <div class="bg-gradient text-center py-4">
+            <h3>Compras</h3>
+        </div>
+        <div class="container justify-content-center border rounded-2">
+            <div class="row px-2 pt-2 border-bottom">
+                <h6> <i class="fa-solid fa-calendar-days"></i> 11 de septiembre</h6>
+            </div>
+            <div class="row p-2 border-bottom">
+                <div class="col-lg-6 col-md-12">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <img src="./img/chocolate5.jpg" alt="Brownie" width="100">
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h6 class="text-warning">Enviado <i class="fa-solid fa-truck-fast"></i></h6>
+                            <h6 class="">Llega el 13 de septiembre</h6>
+                            <p class="text-secondary">Galletas de chocolate <br> 6 unidades</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card w-100 h-100">
-                        <img class="card-img-top img_product" src="./img/chocolate2.jpg" alt="Surtido de chocolates">
-                        <div class="card-body">
-                            <h4 class="card-title">Surtido de chocolates</h4>
-                            <p class="card-text">Gran variedad de chocolates</p>
+                <div class="col-lg-6 col-md-12">
+                    <div class="float-lg-end float-md-start p-2">
+                        <button type="button" class="btn btn-primary">Ver compra</button>
+                        <button type="button" class="btn btn-outline-primary">Volver a comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row p-2">
+                <div class="col-lg-6 col-md-12">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <img src="./img/chocolate1.jpg" alt="Brownie" width="100">
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h6 class="text-warning">Enviado <i class="fa-solid fa-truck-fast"></i></h6>
+                            <h6 class="">Llega el 13 de septiembre</h6>
+                            <p class="text-secondary">Barra de chocolate <br> 8 unidades</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card w-100 h-100">
-                        <img class="card-img-top img_product" src="./img/chocolate3.jpg" alt="Trufas variadas">
-                        <div class="card-body">
-                            <h4 class="card-title">Trufas</h4>
-                            <p class="card-text">Muy autodescriptivo</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card w-100 h-100">
-                        <img class="card-img-top img_product" src="./img/chocolate7.jpg" alt="Trufas variadas">
-                        <div class="card-body">
-                            <h4 class="card-title">Macarrones Oscuros</h4>
-                            <p class="card-text">Macarrones de chocolate amargo</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card w-100 h-100">
-                        <img class="card-img-top img_product" src="./img/chocolate8.jpg" alt="Brownie cubierto">
-                        <div class="card-body">
-                            <h4 class="card-title">Macarrones</h4>
-                            <p class="card-text">Los clásicos macarrones de BetoShop</p>
-                        </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="float-lg-end float-md-start p-2">
+                        <button type="button" class="btn btn-primary">Ver compra</button>
+                        <button type="button" class="btn btn-outline-primary">Volver a comprar</button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Page navigation -->
-        <nav aria-label="Page navigation">
-            <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
-                    <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-                <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <div class="container justify-content-center border rounded-2 my-4">
+            <div class="row px-2 pt-2 border-bottom">
+                <h6 class=""><i class="fa-solid fa-calendar-days"></i> 30 de agosto</h6>
+            </div>
+            <div class="row p-2 border-bottom">
+                <div class="col-lg-6 col-md-12">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <img src="./img/chocolate4.jpg" alt="Brownie" width="100">
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h6 class="text-success">Entregado <i class="fa-solid fa-circle-check"></i></h6>
+                            <h6 class="">Llegó el 1 de septiembre</h6>
+                            <p class="text-secondary">Brownie de chocolate <br> 2 unidades</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="float-lg-end float-md-start p-2">
+                        <button type="button" class="btn btn-primary">Ver compra</button>
+                        <button type="button" class="btn btn-outline-primary">Volver a comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row p-2 border-bottom">
+                <div class="col-lg-6 col-md-12">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <img src="./img/chocolate7.jpg" alt="Brownie" width="100">
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h6 class="text-success">Entregado <i class="fa-solid fa-circle-check"></i></h6>
+                            <h6 class="">Llegó el 1 de septiembre</h6>
+                            <p class="text-secondary">Macarrones Oscuros <br> 1 unidad</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="float-lg-end float-md-start p-2">
+                        <button type="button" class="btn btn-primary">Ver compra</button>
+                        <button type="button" class="btn btn-outline-primary">Volver a comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row p-2">
+                <div class="col-lg-6 col-md-12">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <img src="./img/chocolate2.jpg" alt="Brownie" width="100">
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h6 class="text-success">Entregado <i class="fa-solid fa-circle-check"></i></h6>
+                            <h6 class="">Llegó el 1 de septiembre</h6>
+                            <p class="text-secondary">Surtido de chocolates <br> 5 unidades</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="float-lg-end float-md-start p-2">
+                        <button type="button" class="btn btn-primary">Ver compra</button>
+                        <button type="button" class="btn btn-outline-primary">Volver a comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <!-- place footer here -->
