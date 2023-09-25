@@ -1,0 +1,17 @@
+###
+GET http://jsonplaceholder.typicode.com/users
+
+###
+GET http://jsonplaceholder.typicode.com/users/10
+
+###
+GET http://jsonplaceholder.typicode.com/users/100
+
+###
+GET http://jsonplaceholder.typicode.com/users HTTP/1.1
+Content-Type: 
+
+{
+    "name": "Albert",
+    "username": "BetoC1"
+}
