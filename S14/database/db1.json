@@ -1,0 +1,51 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Pedro",
+            "emal": "pedro@gmail.com",
+            "edad": 25,
+            "sexo": "Cuando quieras"
+        },
+        {
+            "id": 2,
+            "name": "Romana",
+            "emal": "Romana@gmail.com",
+            "edad": 21,
+            "sexo": "F"
+        },
+        {
+            "id": 3,
+            "name": "Juanito",
+            "emal": "juan@gmail.com",
+            "edad": 12,
+            "sexo": "M"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "Producto 1",
+            "sku": "PROD-1",
+            "price": 12
+        },
+        {
+            "id": 2,
+            "name": "Producto 2",
+            "sku": "PROD-2",
+            "price": 33
+        }
+    ],
+    "banks": [
+        {
+            "id": 1,
+            "name": "Banco_1",
+            "code": "B1"
+        },
+        {
+            "id": 2,
+            "name": "Banco_2",
+            "code": "B2"
+        }
+    ]
+}
