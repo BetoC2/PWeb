@@ -109,25 +109,40 @@ class Product {
 
     static createFromJson(jsonValue) {
         const jsonObj = JSON.parse(jsonValue);
-        return new Product(
-            jsonObj.title,
-            jsonObj.description,
-            jsonObj.imageURL,
-            jsonObj.unit,
-            jsonObj.stock,
-            jsonObj.pricePerUnit,
-            jsonObj.category
-        );
+        return this.createFromObject(jsonObj)
     }
-    
-    static createFromObject(obj) {
-        
-    }
-    static cleanObject(obj) {
 
+    static createFromObject(obj) {
+        const newObj = new Product("", "", "", "", 0, 0, "");
+        const { title, description, imageUrl, unit, stock, pricePerUnit, category } = newObj
+
+        newObj.title = obj.title;
+        newObj.description = obj.description;
+        newObj.imageURL = obj.imageURL;
+        newObj.unit = obj.unit;
+        newObj.stock = obj.stock;
+        newObj.pricePerUnit = obj.pricePerUnit;
+        newObj.category = obj.category;
+        return newObj;
+    }
+
+    static cleanObject(object) {
+        const keys = ["uuid", "title", "description", "imageURL", "unit", "stock", "pricePerUnit", "category"];
+        const obj = {};
+
+        for (const element of keys) {
+            if (object.hasOwnProperty(element)) {
+                obj[element] = object[element];
+            }
+        }
+        return obj;
     }
 }
 
 let producto1 = new Product("Producto1", "Producto1", "httpsURL", "pieze", 10, 15.5, "Chocolate");
+let str = JSON.stringify(producto1);
 console.table(producto1);
+
+let producto2 = Product.createFromJson(str);
+console.table(producto2)
 
