@@ -1,11 +1,3 @@
-function generateUUID() {
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
-        let r = Math.random() * 16 | 0;
-        let v = c == 'x' ? r : (r & 0x3 | 0x8);
-        return v.toString(16);
-    });
-}
-
 class ProductException {
     constructor(errorMessage) {
         this.errorMessage = errorMessage;
@@ -107,23 +99,32 @@ class Product {
         return this._category;
     }
 
+    // Se asume que los json tendrán como llaves los atributos con un _ antes
     static createFromJson(jsonValue) {
         const jsonObj = JSON.parse(jsonValue);
-        return this.createFromObject(jsonObj)
+        return new Product(
+            jsonObj._title,
+            jsonObj._description,
+            jsonObj._imageURL,
+            jsonObj._unit,
+            jsonObj._stock,
+            jsonObj._pricePerUnit,
+            jsonObj._category
+        );
     }
 
-    static createFromObject(obj) {
-        const newObj = new Product("", "", "", "", 0, 0, "");
-        const { title, description, imageUrl, unit, stock, pricePerUnit, category } = newObj
-
-        newObj.title = obj.title;
-        newObj.description = obj.description;
-        newObj.imageURL = obj.imageURL;
-        newObj.unit = obj.unit;
-        newObj.stock = obj.stock;
-        newObj.pricePerUnit = obj.pricePerUnit;
-        newObj.category = obj.category;
-        return newObj;
+    static createFromObject(object) {
+        const product = new Product("", "", "", "", 0, 0, "")
+        // Se crea un producto vacio para usar las condiciones de setters
+        const { title, description, imageUrl, unit, stock, pricePerUnit, category } = object
+        product.title = title;
+        product.description = description
+        product.imageUrl = imageUrl
+        product.unit = unit;
+        product.stock = stock;
+        product.pricePerUnit = pricePerUnit;
+        product.category = category;
+        return product;
     }
 
     static cleanObject(object) {
@@ -142,7 +143,5 @@ class Product {
 let producto1 = new Product("Producto1", "Producto1", "httpsURL", "pieze", 10, 15.5, "Chocolate");
 let str = JSON.stringify(producto1);
 console.table(producto1);
-
 let producto2 = Product.createFromJson(str);
 console.table(producto2)
-
