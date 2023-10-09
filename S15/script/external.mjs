@@ -24,8 +24,8 @@ let getLongest = (error, data) => {
     console.table(json[0])
 }
 
-let deleteUser = (id => {
-    let getUsers = (error, data) => {
+function deleteUser (id) {
+    let deleteUsr = (error, data) => {
         if (error)
             console.log(error);
         let users = JSON.parse(data)
@@ -44,9 +44,9 @@ let deleteUser = (id => {
             console.log("No existe ese usuario")
         }
     }
-    fs.readFile("./files/db.json", "utf-8", getUsers);
+    fs.readFile("./files/db.json", "utf-8", deleteUsr);
 
-})
+}
 
 //fs.readFile("./files/db.json", "utf-8", fileReaderCb);
 //fs.readFile("./files/db.json", "utf-8", getAverage);
