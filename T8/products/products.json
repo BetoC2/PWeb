@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Chocolate en barra",
+        "Price": 17.59,
+        "Category": "barra"
+    },
+    {
+        "id": 2,
+        "name": "Brownie de chocolate",
+        "Price": 40.50,
+        "Category": "pan"
+    },
+    {
+        "id": 3,
+        "name": "Surtido de chocolates",
+        "Price": 40.12,
+        "Category": "surtido"
+    },
+    {
+        "id": 4,
+        "name": "Fresas con chocolate",
+        "Price": 37.18,
+        "Category": "surtido"
+    },
+    {
+        "id": 5,
+        "name": "Pan de muerto",
+        "Price": 30.12,
+        "Category": "pan"
+    }
+]
