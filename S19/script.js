@@ -4,4 +4,4 @@ function hola(value){
         element = document.getElementById(id);
         element.innerText = value == 0 ? (i%2 == 0 ? "Pares activos": "Disabled"): (i%2 != 0? "Impares activos": "Disabled") 
     }
-}   
+}
